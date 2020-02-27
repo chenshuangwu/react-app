@@ -72,6 +72,14 @@ class Title extends Component {
   }
 }
 
+class Test extends Component {
+  render(){
+    return(
+      <di>test</di>
+    )
+  }
+}
+
 function App() {
   const word = 'is solo'
   const badword = <span> hhh </span>
@@ -85,6 +93,7 @@ function App() {
       </p>
       <Title />
       <LikeButton ></LikeButton>
+      <Test></Test>
       <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
         Learn React
       </a>
