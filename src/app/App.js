@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 
 
 const users = [
@@ -26,8 +26,8 @@ class PageHeader extends Component {
 
     return (
       <header className="page-hd">
-        <img src="http://m.doufu.la/assets/img/logo.png"></img>
-        { users.map(user => <User user={user}></User> )}
+        <img src="http://m.doufu.la/assets/img/logo.png" alt='logo'></img>
+        { users.map((user, i) => <User key={i} user={user}></User> )}
       </header>
     )
   }
@@ -75,7 +75,7 @@ class Title extends Component {
 class Test extends Component {
   render(){
     return(
-      <di>test</di>
+      <div>test</div>
     )
   }
 }
