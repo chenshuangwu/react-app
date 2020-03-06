@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './app/App';
-import Index from './redux/index'
+import Index from './context/index'
 // import CommentApp from './CommentApp'
+// import  './reduce'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Index />, document.getElementById('root'));
