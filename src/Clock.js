@@ -8,7 +8,7 @@ class Clock extends Component {
         }
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         this.timer = setInterval( ()=> {
             this.setState({ date: new Date() })
         }, 1000)

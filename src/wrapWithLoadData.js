@@ -7,7 +7,7 @@ export default (WrappedComponent, name) => {
             this.state = { data: null}
         }
 
-        componentWillMount() {
+        UNSAFE_componentWillMount() {
             let data = localStorage.getItem(name)
             try {
                 this.setState({ data: JSON.parse(data)})

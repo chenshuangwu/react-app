@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Header from './Header'
-import Content from './Content'
-import { Provider } from './react-redux'
+import Header from '../containers/Header'
+import Content from '../containers/Content'
+import { Provider } from 'react-redux'
 import ReactDOM from 'react-dom';
 
 import './index.scss'

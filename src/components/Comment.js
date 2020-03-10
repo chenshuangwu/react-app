@@ -11,13 +11,11 @@ class Comment extends Component {
         this.state = { timeString: ''}
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         this._updateTimeString()
         this._timer = setInterval( this._updateTimeString.bind(this), 5000)
     }
 
-    componentDidMount(){
-    }
 
     componentWillUnmount(){
         clearInterval(this._timer)
